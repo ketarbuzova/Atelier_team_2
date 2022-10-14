@@ -19,6 +19,9 @@ h1 {
     font-size: 70px;
     line-height: 0px;
     color: $white;
+    
+    @include media('>=768px') {
+        font-size: 50px;
 }
 
 h2 {
@@ -27,7 +30,6 @@ h2 {
     font-size: 60px;
     line-height: 70px;
     text-align: center;
-    text-transform: uppercase;
     color: $gold;
     
     @include media('>=768px') {
@@ -41,6 +43,9 @@ h3 {
     line-height: 34px;
     text-align: center;
     color: $gold;
+    
+    @include media('>=768px') {
+        font-size: 20px;
 }
 
 .pseudo-title {
@@ -51,6 +56,9 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     color: $light-green;
+    
+    @include media('>=768px') {
+        font-size: $base-font-size;
 }
 
 .page-title {
@@ -60,6 +68,9 @@ h3 {
     letter-spacing: 2px;
     text-align: center;
     color: $white; 
+
+    @include media('>=768px') {
+        font-size: 12px;
 }
 
 span {
@@ -70,6 +81,9 @@ span {
 
 p {
     margin: 0 0 79px;
+
+    @include media('>=768px') {
+        margin: 0 0 30px;
 }
 
 .subscribe-text {
@@ -78,6 +92,9 @@ p {
     text-align: center;
     color: $light-green;
     
+    @include media('>=768px') {
+        font-size: 12px;
+
     a {
         color: $gold;
     }
@@ -95,7 +112,7 @@ a {
 }
 
 .btn {
-    @include animate();
+    @include animate(all ease-out 0.3s);
 
     display: inline-block;
     padding: 15px 25px;
@@ -137,3 +154,9 @@ a {
     }  
 }
 
+.grid-container {
+    --auto-grid-min-size: 256px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 20px;
+}
