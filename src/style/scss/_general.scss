@@ -11,6 +11,7 @@ body {
     font-weight: 400;
     line-height: 26px;
     color: $light-green;
+    background-color: $light-black;
 }
 
 h1 {
@@ -109,6 +110,11 @@ p {
 
 a {
     text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
 }
 
 .btn {
