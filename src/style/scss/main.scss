@@ -1,5 +1,5 @@
-@import "fonts";
-@import "variables";
-@import "general";
-@import "page/main-page";
-@import "blocks/header";
+@import "../scss/mixins"
+@import "../scss/fonts"
+@import "../scss/icons"
+@import "../scss/variables"
+@import "../scss/general"

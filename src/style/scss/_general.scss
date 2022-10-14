@@ -3,3 +3,137 @@
 *::before {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    font-size: $base-font-size;
+    font-weight: 400;
+    line-height: 26px;
+    color: $light-green;
+}
+
+h1 {
+    margin: 0 0 35px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 0px;
+    color: $white;
+}
+
+h2 {
+    margin: 0 0 60px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $gold;
+    
+    @include media('>=768px') {
+        font-size: 40px;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: $gold;
+}
+
+.pseudo-title {
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $light-green;
+}
+
+.page-title {
+    margin: 0 0 41px;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white; 
+}
+
+span {
+    font-size: 15px;
+    line-height: 26px;
+    color: $light-green;
+}
+
+p {
+    margin: 0 0 79px;
+}
+
+.subscribe-text {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: $light-green;
+    
+    a {
+        color: $gold;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    @include animate();
+
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 1px solid $gold;
+    font-size: $base-font-size;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $gold;
+    text-decoration: none;
+
+        &:hover {
+            background-color: $gold;
+            color: $light-black;
+            border-style: none;
+        }
+ 
+    .btn-gold {
+        padding: 14px 24px;
+        background-color: $gold;
+        color: $light-black;
+        border-style: none;
+
+        &:hover {
+            background-color: transparent;
+            color: $gold;
+            border: 1px solid $light-black;
+        }
+    }   
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+
+    @include media('>=768px') {
+        display: inline-block;
+    }  
+}
+
