@@ -9,7 +9,12 @@ h3{
     text-transform: uppercase;
     color:$light-green;
 }
-
+.img-holder img{
+    border: 1px solid $dark-brown;
+    width: 100%;
+    max-width: 387px;
+    height: auto;
+}
 .grid-container{
     width: 100%;
     max-width: 1200px;
