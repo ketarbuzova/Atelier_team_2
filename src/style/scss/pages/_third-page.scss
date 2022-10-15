@@ -3,14 +3,8 @@
 *::after{
     box-sizing: border-box;
 }
-h3{
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color:$light-green;
-}
+
 .img-holder img{
-    border: 1px solid $dark-brown;
     width: 100%;
     max-width: 387px;
     height: auto;
