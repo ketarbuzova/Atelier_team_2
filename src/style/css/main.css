@@ -282,4 +282,81 @@ a {
 a:hover {
   color: rgba(255, 255, 255, 0.19);
 }
-/*# sourceMappingURL=main.css.map */
+
+.follow-section {
+  padding: 21px 0;
+  border-top: 1px solid #4b4136;
+  border-bottom: 1px solid #4b4136;
+}
+.follow-section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.follow-section .col {
+  width: 50%;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .follow-section .col {
+    width: 20%;
+    min-height: 240px;
+  }
+}
+.follow-section .col .insta-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 217px;
+  min-height: 240px;
+  background-size: contain;
+}
+.follow-section .col .icon-instagram {
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 50px;
+  color: white;
+}
+.follow-section .col-follow {
+  width: 100%;
+  min-width: 217px;
+  min-height: 240px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .follow-section .col-follow {
+    width: 20%;
+    min-height: 240px;
+  }
+}
+.follow-section .col-follow .icon-instagram {
+  position: absolute;
+  font-size: 200px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.19);
+}
+.follow-section .col-follow .btn-holder {
+  text-align: center;
+}
+.follow-section .col-follow .btn {
+  background-color: #FFAE2B;
+  color: #181511;
+}
+.follow-section .col-follow h3 {
+  text-align: center;
+  padding: 40px 0;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+}
