@@ -198,6 +198,7 @@ p {
   padding: 0 15px;
   width: 100%;
   max-width: 1200px;
+  background-color: #181511;
 }
 
 a {
@@ -256,12 +257,6 @@ li {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 20px;
-}
-
-.footer .container {
-  border-top: 1px solid #4B4136;
-  border-width: 1200px;
-  padding: 0 0 25px;
 }
 
 .footer-row {
