@@ -23,6 +23,7 @@ h1 {
     
     @include media('>=768px') {
         font-size: 50px;
+    }
 }
 
 h2 {
@@ -35,6 +36,7 @@ h2 {
     
     @include media('>=768px') {
         font-size: 40px;
+    }
 }
 
 h3 {
@@ -47,6 +49,7 @@ h3 {
     
     @include media('>=768px') {
         font-size: 20px;
+    }
 }
 
 .pseudo-title {
@@ -60,6 +63,7 @@ h3 {
     
     @include media('>=768px') {
         font-size: $base-font-size;
+    }
 }
 
 .page-title {
@@ -72,6 +76,7 @@ h3 {
 
     @include media('>=768px') {
         font-size: 12px;
+    }
 }
 
 span {
@@ -85,6 +90,7 @@ p {
 
     @include media('>=768px') {
         margin: 0 0 30px;
+    }
 }
 
 .subscribe-text {
@@ -98,6 +104,7 @@ p {
 
     a {
         color: $gold;
+        }
     }
 }
 

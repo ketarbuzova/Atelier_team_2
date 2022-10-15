@@ -1,0 +1,45 @@
+.container-header {
+    padding: 25px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-holder {
+    padding: 0 20px;
+}
+
+.nav-link {
+    font-family: $font-family;
+    color: $light-green;
+    font-size: 11px;
+    padding: 20px;
+
+    &:hover {
+        color: $gold;
+    }
+}
+
+.btn {
+  margin-left: auto;
+}
+
+.text-btn {
+    font-family: $font-family;
+    color: $gold;
+    font-size: 11px;
+
+    &:hover {
+        color: $light-black;
+    }
+  }
+
+  
