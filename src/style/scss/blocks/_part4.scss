@@ -1,0 +1,116 @@
+
+
+
+
+.part4 {
+    
+
+    .visual-section {
+        min-height: 462px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-bottom: 150px;
+
+    }
+}
+
+
+
+.info {
+    text-align: center;
+    // padding: 15px;
+
+    @include media('>=768px') {
+        padding: 120px;
+    }
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media('>=768px') {
+        justify-content: center;
+    }
+    
+    
+}
+
+.col {
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid $dark-brown;
+    padding: 140px 50px 60px;
+    background-color: $light-black;
+    transition: all ease-in-out 0.3s;
+    text-align: start;
+
+    @include media ('>=1024px') {
+        width: calc(100%/3);
+    }
+    
+    
+
+    h3 {
+        text-align: inherit;
+    }
+
+    .icon {
+        color: $brown;
+
+        .icon-square {
+            position: absolute;
+            left: 60px;
+            font-size: 35px;
+            top: 47px;
+        }
+
+        .icon-half-square {
+            position: absolute;
+            z-index: 1;
+            left: 46px;
+            font-size: 52px;
+            top: 47px;
+        }
+
+        .icon-pentagon {
+            position: absolute;
+            left: 53px;
+            font-size: 38px;
+            top: 66px;
+        }
+
+        
+    }
+
+    .icon2 {
+        color: $gold;
+
+        .icon-triangle {
+            position: absolute;
+            left: 58px;
+            font-size: 35px;
+            top: 65px;
+        }
+
+        .icon-half-circle {
+            position: absolute;
+            left: 68px;
+            font-size: 48px;
+            top: 58px;
+        }
+
+        .icon-stroke-circle {
+            position: absolute;
+            left: 58px;
+            font-size: 43px;
+            top: 43px;
+        }
+    }
+}
+
+.col:hover {
+    transform: scale(1.04);
+}

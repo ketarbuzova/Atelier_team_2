@@ -282,4 +282,103 @@ a {
 a:hover {
   color: rgba(255, 255, 255, 0.19);
 }
+
+.part4 .visual-section {
+  min-height: 462px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 150px;
+}
+
+.info {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .info {
+    padding: 120px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.col {
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #4B4136;
+  padding: 140px 50px 60px;
+  background-color: #181511;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  text-align: start;
+}
+@media (min-width: 1024px) {
+  .col {
+    width: 33.3333333333%;
+  }
+}
+.col h3 {
+  text-align: inherit;
+}
+.col .icon {
+  color: #54493E;
+}
+.col .icon .icon-square {
+  position: absolute;
+  left: 60px;
+  font-size: 35px;
+  top: 47px;
+}
+.col .icon .icon-half-square {
+  position: absolute;
+  z-index: 1;
+  left: 46px;
+  font-size: 52px;
+  top: 47px;
+}
+.col .icon .icon-pentagon {
+  position: absolute;
+  left: 53px;
+  font-size: 38px;
+  top: 66px;
+}
+.col .icon2 {
+  color: #FFAE2B;
+}
+.col .icon2 .icon-triangle {
+  position: absolute;
+  left: 58px;
+  font-size: 35px;
+  top: 65px;
+}
+.col .icon2 .icon-half-circle {
+  position: absolute;
+  left: 68px;
+  font-size: 48px;
+  top: 58px;
+}
+.col .icon2 .icon-stroke-circle {
+  position: absolute;
+  left: 58px;
+  font-size: 43px;
+  top: 43px;
+}
+
+.col:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
 /*# sourceMappingURL=main.css.map */
