@@ -1,176 +1,179 @@
-*, 
-*::after, 
+*,
+*::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: $font-family;
-    font-size: $base-font-size;
-    font-weight: 400;
-    line-height: 26px;
-    color: $light-green;
-    background-color: $light-black;
+  margin: 0;
+  font-family: $font-family;
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: 26px;
+  color: $light-green;
+  background-color: $light-black;
 }
 
 h1 {
-    margin: 0 0 35px;
-    font-weight: 400;
-    font-size: 70px;
-    line-height: 0px;
-    color: $white;
-    
-    @include media('>=768px') {
-        font-size: 50px;
-    }
+  margin: 0 0 35px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 0px;
+  color: $white;
+
+  @include media(">=768px") {
+    font-size: 50px;
+  }
 }
 
 h2 {
-    margin: 0 0 60px;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 70px;
-    text-align: center;
-    color: $gold;
-    
-    @include media('>=768px') {
-        font-size: 40px;
-    }
+  margin: 0 0 60px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  color: $gold;
+
+  @include media(">=768px") {
+    font-size: 40px;
+  }
 }
 
 h3 {
-    margin: 0 0 10px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-    text-align: center;
-    color: $gold;
-    
-    @include media('>=768px') {
-        font-size: 20px;
-    }
+  margin: 0 0 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: $gold;
+
+  @include media(">=768px") {
+    font-size: 20px;
+  }
 }
 
 .pseudo-title {
-    margin: 0 0 10px;
-    font-size: 12px;
-    line-height: 22px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $light-green;
-    
-    @include media('>=768px') {
-        font-size: $base-font-size;
-    }
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-green;
+
+  @include media(">=768px") {
+    font-size: $base-font-size;
+  }
 }
 
 .page-title {
-    margin: 0 0 41px;
-    font-size: 13px;
-    line-height: 23px;
-    letter-spacing: 2px;
-    text-align: center;
-    color: $white; 
+  margin: 0 0 41px;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: $white;
 
-    @include media('>=768px') {
-        font-size: 12px;
-    }
+  @include media(">=768px") {
+    font-size: 12px;
+  }
 }
 
 span {
-    font-size: 15px;
-    line-height: 26px;
-    color: $light-green;
+  font-size: 15px;
+  line-height: 26px;
+  color: $light-green;
 }
 
 p {
-    margin: 0 0 79px;
+  margin: 0 0 79px;
 
-    @include media('>=768px') {
-        margin: 0 0 30px;
-    }
+  @include media(">=768px") {
+    margin: 0 0 30px;
+  }
 }
 
 .subscribe-text {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: $light-green;
-    
-    @include media('>=768px') {
-        font-size: 12px;
-    }
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $light-green;
 
-    a {
-        color: $gold;
-    }
+  @include media(">=768px") {
+    font-size: 12px;
+  }
+
+  a {
+    color: $gold;
+  }
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 100%;
-    max-width: 1200px;
-    background-color: $light-black;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: $light-black;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 .btn {
-    @include animate(all ease-out 0.3s);
+  @include animate(all ease-out 0.3s);
 
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: transparent;
-    border: 1px solid $gold;
-    font-size: $base-font-size;
-    line-height: 22px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $gold;
-    text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 1px solid $gold;
+  font-size: $base-font-size;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gold;
+  text-decoration: none;
 
-        &:hover {
-            background-color: $gold;
-            color: $light-black;
-            border-style: none;
-        }
- 
-    .btn-gold {
-        padding: 14px 24px;
-        background-color: $gold;
-        color: $light-black;
-        border-style: none;
+  &:hover {
+    background-color: $gold;
+    color: $light-black;
+    border-style: none;
+  }
 
-        &:hover {
-            background-color: transparent;
-            color: $gold;
-            border: 1px solid $light-black;
-        }
-    }   
+  .btn-gold {
+    padding: 14px 24px;
+    background-color: $gold;
+    color: $light-black;
+    border-style: none;
+
+    &:hover {
+      background-color: transparent;
+      color: $gold;
+      border: 1px solid $light-black;
+    }
+  }
 }
 
 .img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 
-    @include media('>=768px') {
-        display: inline-block;
-    }  
+  @include media(">=768px") {
+    display: inline-block;
+  }
 }
 
 .grid-container {
-    --auto-grid-min-size: 256px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 20px;
+  --auto-grid-min-size: 256px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 20px;
 }
