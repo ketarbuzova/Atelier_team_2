@@ -94,7 +94,12 @@
             }
         
             &.col-follow {
-                margin: 0 39px;
+                margin: 0 auto;
+                margin: 0 0 39;
+            }
+
+            @include media(">=768px") {
+                margin: 0 auto;
             }
         }
     }

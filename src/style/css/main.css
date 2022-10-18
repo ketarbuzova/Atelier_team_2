@@ -149,7 +149,7 @@ h4 {
   display: inline-block;
   margin: 0 auto;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 25px;
   text-align: center;
   color: #FFAE2B;
@@ -244,7 +244,7 @@ li {
   color: #FFAE2B;
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 256px) {
   .btn {
     padding: 12px 20px;
     font-size: 10px;
@@ -272,7 +272,7 @@ li {
   background-color: #FFAE2B;
   color: #181511;
 }
-@media (min-width: 768px) {
+@media (min-width: 256px) {
   .btn.btn-gold {
     padding: 12px 20px;
     font-size: 10px;
@@ -732,7 +732,13 @@ li {
   }
 }
 .follow-section .row .col.col-follow {
-  margin: 0 39px;
+  margin: 0 auto;
+  margin: 0 0 39;
+}
+@media (min-width: 768px) {
+  .follow-section .row .col {
+    margin: 0 auto;
+  }
 }
 
 .subscribe-section {
